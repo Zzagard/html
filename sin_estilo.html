@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: auto 1fr auto; /* Columnas automáticas a ambos lados y el centro ocupa el espacio restante */
+            grid-template-rows: auto;
+            gap: 10px;
+            background-color: #ffffff; /* Fondo blanco para la página */
+        }
+
+        .header {
+            grid-column: 1 / span 3; /* Ocupa las tres columnas */
+            background-color: #3366cc; /* Fondo azul */
+            color: #ffffff; /* Texto blanco */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #3366cc; /* Fondo azul */
+        }
+
+        .nav-menu li {
+            padding: 10px;
+        }
+
+        .nav-menu li a {
+            color: #ffffff; /* Texto blanco */
+            text-decoration: none;
+        }
+
+        .nav-menu li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            grid-column: 2; /* Centro */
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 10px;
+        }
+
+        .sidebar {
+            grid-column: 3; /* Derecha */
+            background-color: #ffa500; /* Fondo naranja */
+            color: #ffffff; /* Texto blanco */
+            padding: 10px;
+        }
+
+        .footer {
+            grid-column: 1 / span 3; /* Ocupa las tres columnas */
+            background-color: #adff2f; /* Fondo verde limón */
+            color: #000000; /* Texto negro */
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bienvenidos a mi pagina web</h1>
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+            <li><a href="#">Opción 4</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h2>Este es el cuerpo de mi página</h2>
+        <p>Mi página está dividida en distintas secciones, esta corresponde al cuerpo de mi sencilla página web.</p>
+        <p>Mi página está dividida en distintas secciones, esta corresponde al cuerpo de mi sencilla página web, la parte izquierda contiene un menú de navegación y la parte derecha una barra con información adicional.</p>
+        <p>Aca es mi área personal puedo escribir cualquier cosa que desee.</p>
+    </div>
+    <div class="sidebar">
+        <h3>Barra derecha</h3>
+        <p>Esta es la barra lateral, por lo general se usa para colocar anuncios o información adicional de interés.</p>
+    </div>
+    <div class="footer">
+        <h3>Pie de página</h3>
+    </div>
+</body>
+</html>
